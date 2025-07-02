@@ -58,10 +58,29 @@ export const notesReducer = (state, { type, payload }) => {
           state.archive.find(({ id }) => id === payload.id)],
           // after the we'll remove that notes from the archive
         archive: state.archive.filter(({id}) => id!== payload.id)
-      };
-       
-        
+      }
     }
+    case "ADD_TO_IMP":{
+        return {
+          ...state,
+          important: [
+            ...state.important,
+            state.notes.find(({ id }) => id === payload.id),
+          ],
+          notes: state.notes.filter(({ id }) => id !== payload.id)
+        }
+    }
+
+    case "REMOVE_FROM_IMP":{
+      return {
+          ...state,
+          notes:[...state.notes ,
+            state.important.find(({ id }) => id===payload.id)
+          ],
+          important: state.important.filter(({id}) => id!==payload.id)
+      }
+    }
+    
     default:
       state;
   }

@@ -3,13 +3,15 @@ import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/SideBar/Sidebar";
 import NotesCard from "../../components/NotesCard/NotesCard";
 import { useNotes } from "../../context/NotesContext";
-import Archive from "../Archive/Archive";
 
 function Home() {
   
-  const { title, text, notes,archive, notesDispatch } = useNotes();
-  console.log(notes);
+  const { title, text, notes,archive,important, notesDispatch } = useNotes();
+  
+  console.log("notes",notes);
   console.log("archive", archive);
+  console.log("important",important)
+ 
   const onTitleChange = (e) => {
     notesDispatch({
       type: "TITLE",
