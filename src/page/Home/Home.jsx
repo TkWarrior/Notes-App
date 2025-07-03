@@ -6,12 +6,13 @@ import { useNotes } from "../../context/NotesContext";
 
 function Home() {
   
-  const { title, text, notes,archive,important, notesDispatch } = useNotes();
+  const { title, text, notes,archive,important,bin, notesDispatch } = useNotes();
   
   console.log("notes",notes);
   console.log("archive", archive);
-  console.log("important",important)
- 
+  console.log("important",important);
+  console.log("bin" , bin);
+  
   const onTitleChange = (e) => {
     notesDispatch({
       type: "TITLE",
