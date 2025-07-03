@@ -6,6 +6,8 @@
  Pin/Unpin Notes , Add To Archive , Remove From Archive , Add To Important , Remove From Important 
  Temporary Delete , Permanent Delete
 
+# Pin/Unpinned Notes
+![alt text](image-4.png)
 
 # Pages
 # 1. Home

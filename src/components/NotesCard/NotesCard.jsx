@@ -51,7 +51,7 @@ function NotesCard({ note }) {
       !isNotesInBin
         ? notesDispatch({
             type: "ADD_TO_BIN",
-            payload: { id },
+            payload: { id }
           })
         : notesDispatch({
             type: "REMOVE_FROM_BIN",
