@@ -12,11 +12,11 @@ function Archive() {
         <Sidebar />
         <div className="w-full">
           {archive.length > 0 && (
-            <h1 className="font-bold text-3xl text-center"> Archived Notes</h1>
+            <h1 className="font-bold text-3xl text-center text-indigo-600 p-5 m-5"> Archived Notes</h1>
           )}
-          <div className='h-full'>
+          <div className=''>
             {
-              <div className="grid justify-center gap-2 sm:grid-cols-4 ">
+              <div className="grid gap-2 sm:grid-cols-4 ">
                 {archive?.length > 0 &&
                   archive.map((note) => (
                     <NotesCard key={note.id} note={note} />

@@ -7,8 +7,8 @@ function Sidebar() {
   }
 
   return (
-    <div className="">
-      <aside className="w-40 h-screen p-3 pr-0 bg-slate-100 shadow-md ">
+    <aside className="w-40  p-3 pr-0 bg-slate-100 shadow-md ">
+    
         <NavLink className={getStyle} to="/">
           <span className="material-icons-outlined">home</span>
           <span>Home</span>
@@ -26,8 +26,8 @@ function Sidebar() {
           <span className="material-icons-outlined">delete</span>
           <span>Bin</span>
         </NavLink>
-      </aside>
-    </div>
+   
+    </aside>
   );
 }
 
