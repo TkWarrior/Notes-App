@@ -12,7 +12,7 @@ function Important() {
         <Sidebar />
         <div className="w-full">
           {important.length > 0 && (
-            <h1 className="font-bold text-3xl text-center"> Archived Notes</h1>
+            <h1 className="font-bold text-3xl text-center"> Important Notes</h1>
           )}
           <div className="h-full">
             {

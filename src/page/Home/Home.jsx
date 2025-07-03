@@ -83,7 +83,7 @@ function Home() {
           <div className="mt-10">
             {pinnedNotes.length > 0 && (
               <div>
-                <h3>Pinned Notes</h3>
+                <h3 className="text-2xl text-center font-mono">Pinned Notes</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                   {pinnedNotes?.length > 0 &&
                     pinnedNotes.map((note) => (
@@ -93,7 +93,9 @@ function Home() {
               </div>
             )}
 
-            {pinnedNotes.length > 0 && <h3>Other Notes</h3>}
+            {pinnedNotes.length > 0 && (
+              <h3 className="text-2xl text-center font-mono">Other Notes</h3>
+            )}
 
             {
               <div className="mb-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
